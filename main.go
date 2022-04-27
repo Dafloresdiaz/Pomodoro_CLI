@@ -20,7 +20,7 @@ func main() {
 	var no_valid_option = errors.New(
 		"No instruction provided, please use start or stop")
 
-	if instruction_value != "" {
+	if instruction_value != " " {
 		instruction_value = strings.ToLower(instruction_value)
 	}
 
